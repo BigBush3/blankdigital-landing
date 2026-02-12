@@ -62,11 +62,11 @@ export default function Process() {
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
             <span className="text-slate-900">От идеи до </span>
-            <span className="text-gradient">продукта</span>
+            <span className="text-gradient"> масштабируемого продукта</span>
           </h2>
           <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-            Прозрачный процесс разработки с фокусом на результат.
-            Каждый этап — это измеримый прогресс к цели.
+            Выстроенный и прозрачный процесс разработки 
+            с чёткими метриками и контролем на каждом этапе.
           </p>
         </motion.div>
 
