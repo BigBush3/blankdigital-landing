@@ -9,24 +9,24 @@ const categories = ["Все", "Платформы", "Мобильные", "AI", 
 
 const cases = [
   {
-    title: "EpicBooks",
-    client: "NeoBank",
+    title: "Greenbee",
+    client: "EcoSync",
     category: "Мобильные",
     description:
-      "Мобильное приложение для чтения и прослушивания романов и аудиокниг с элементами искусственного интеллекта и геймификации.",
-    tags: ["React Native", "FastApi", "PostgreSQL"],
+      "Экосистемная онлайн-платформа для экологичных игроков в виде мобильного приложения.Greenbee свяжет сознательного потребителя с экологичным бизнесом и социальными проектами по всему миру.",
+    tags: ["React Native", "NestJs","Node.js","Firebase", "PostgreSQL"],
     metrics: { label: "Рост конверсии", value: "+340%" },
     gradient: "from-blue-600 via-blue-500 to-cyan-400",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
   },
   {
-    title: "EcoTrasit",
+    title: "ReachOut",
     client: "RetailMax",
     category: "Платформы",
     description:
-      "Онлайн-платформа для логистики, ориентированная на оптимизацию маршрутов доставки и экологически чистые виды транспорта.",
-    tags: ["Next.js", "Python"],
+      "Современный  минималистичный веб-сайт, основанного на анализе конкурентов и реальных потребностях пользователей.",
+    tags: ["Vue.js", "Laravel"],
     metrics: { label: "Снижение оттока", value: "-62%" },
     gradient: "from-indigo-600 via-blue-500 to-violet-400",
     image:
@@ -70,7 +70,7 @@ const cases = [
   },
   {
     title: "Viralyze",
-    client: "RealtyAI",
+    client: "Decode Viral Content",
     category: "Мобильные",
     description:
       "Мобильное приложение для анализа коротких видеороликов из Instagram, TikTok и YouTube.",
@@ -81,12 +81,12 @@ const cases = [
       "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
   },
   {
-    title: "Skill Surge",
-    client: "RealtyAI",
+    title: "BlitzBit",
+    client: "BlitzBit",
     category: "Платфомы",
     description:
-      "Платформа для обучения на основе ИИ, ориентированной на ИИ, чистую энергетику и предпринимательство",
-    tags: ["Next.js", "Node.js", "PostgreSQL"],
+      "Веб-платформа и панель администратора для полуавтоматического обмена",
+    tags: ["Vue.js", "MobgoDB"],
     metrics: { label: "Время сделки", value: "-45%" },
     gradient: "from-blue-500 via-blue-400 to-sky-300",
     image:
@@ -94,11 +94,24 @@ const cases = [
   },
   {
     title: "Kegel App",
-    client: "RealtyAI",
+    client: "PelviFit",
     category: "Мобильные",
     description:
       "Мобильное приложения для отслеживания и анализа тренировок",
     tags: ["React Native", "Nuxt.js"],
+    metrics: { label: "Время сделки", value: "-45%" },
+    gradient: "from-blue-500 via-blue-400 to-sky-300",
+    image:
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+  },
+
+  {
+    title: "Карта Капитана",
+    client: "QuestHub",
+    category: "Мобильные",
+    description:
+      "Агрегатор квестов в городах России",
+    tags: ["React Native", "TypeScript", "Express.js"],
     metrics: { label: "Время сделки", value: "-45%" },
     gradient: "from-blue-500 via-blue-400 to-sky-300",
     image:
