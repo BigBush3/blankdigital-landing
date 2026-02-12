@@ -80,8 +80,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto mb-12 leading-relaxed"
         >
-          Разрабатываем платформы, мобильные приложения и бизнес-экосистемы,
-          усиленные искусственным интеллектом. Превращаем идеи в технологические продукты.
+          Создаём платформы и мобильные приложения, которые дают бизнесу конкурентное преимущество.
         </motion.p>
 
         {/* CTA Buttons */}
