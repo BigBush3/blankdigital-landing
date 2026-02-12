@@ -9,36 +9,36 @@ const categories = ["Все", "Платформы", "Мобильные", "AI", 
 
 const cases = [
   {
-    title: "FinTech Ecosystem",
+    title: "EpicBooks",
     client: "NeoBank",
-    category: "Экосистемы",
+    category: "Мобильные",
     description:
-      "Полная цифровая экосистема для необанка: мобильное приложение, веб-платформа, AI-скоринг и система фрод-мониторинга в реальном времени.",
-    tags: ["React Native", "Node.js", "ML", "Kubernetes"],
+      "Мобильное приложение для чтения и прослушивания романов и аудиокниг с элементами искусственного интеллекта и геймификации.",
+    tags: ["React Native", "FastApi", "PostgreSQL"],
     metrics: { label: "Рост конверсии", value: "+340%" },
     gradient: "from-blue-600 via-blue-500 to-cyan-400",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
   },
   {
-    title: "AI Customer Platform",
+    title: "EcoTrasit",
     client: "RetailMax",
     category: "Платформы",
     description:
-      "Платформа клиентской аналитики с AI-рекомендациями, предиктивным моделированием оттока и автоматизацией маркетинговых кампаний.",
-    tags: ["Next.js", "Python", "GPT-4", "BigQuery"],
+      "Онлайн-платформа для логистики, ориентированная на оптимизацию маршрутов доставки и экологически чистые виды транспорта.",
+    tags: ["Next.js", "Python"],
     metrics: { label: "Снижение оттока", value: "-62%" },
     gradient: "from-indigo-600 via-blue-500 to-violet-400",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
   },
   {
-    title: "Logistics Mobile App",
+    title: "Utorg",
     client: "CargoFlow",
     category: "Мобильные",
     description:
-      "Мобильное приложение для управления логистикой с AI-оптимизацией маршрутов, трекингом в реальном времени и предиктивным ETA.",
-    tags: ["Flutter", "Go", "TensorFlow", "Maps API"],
+      "Мобильное приложение-кошелька для криптовалют - полномасштабный производственный продукт для безопасного управления цифровыми активами.",
+    tags: ["React Native", "Nest.js", "Web3"],
     metrics: { label: "Экономия топлива", value: "-28%" },
     gradient: "from-blue-500 via-sky-400 to-teal-400",
     image:
@@ -57,11 +57,11 @@ const cases = [
       "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
   },
   {
-    title: "EdTech Platform",
+    title: "EcoPayz",
     client: "LearnPro",
     category: "Платформы",
     description:
-      "Образовательная платформа с адаптивным обучением на базе AI, персональными траекториями и AI-тьютором для каждого студента.",
+      "Глобальный поставщик платежных решений, предлагающий мгновенные, безопасные и удобные платежные услуги клиентам и предприятиям по всему миру.",
     tags: ["Next.js", "Python", "LLM", "PostgreSQL"],
     metrics: { label: "Завершаемость курсов", value: "+89%" },
     gradient: "from-cyan-500 via-blue-500 to-blue-600",
@@ -69,12 +69,36 @@ const cases = [
       "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80",
   },
   {
-    title: "PropTech Ecosystem",
+    title: "Viralyze",
     client: "RealtyAI",
-    category: "Экосистемы",
+    category: "Мобильные",
     description:
-      "Экосистема для рынка недвижимости: AI-оценка объектов, виртуальные туры, CRM для агентов и маркетплейс с умным поиском.",
-    tags: ["React", "Node.js", "Computer Vision", "3D"],
+      "Мобильное приложение для анализа коротких видеороликов из Instagram, TikTok и YouTube.",
+    tags: ["React Native", "Express.js", "PostgreSQL"],
+    metrics: { label: "Время сделки", value: "-45%" },
+    gradient: "from-blue-500 via-blue-400 to-sky-300",
+    image:
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+  },
+  {
+    title: "Skill Surge",
+    client: "RealtyAI",
+    category: "Платфомы",
+    description:
+      "Платформа для обучения на основе ИИ, ориентированной на ИИ, чистую энергетику и предпринимательство",
+    tags: ["Next.js", "Node.js", "PostgreSQL"],
+    metrics: { label: "Время сделки", value: "-45%" },
+    gradient: "from-blue-500 via-blue-400 to-sky-300",
+    image:
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+  },
+  {
+    title: "Kegel App",
+    client: "RealtyAI",
+    category: "Мобильные",
+    description:
+      "Мобильное приложения для отслеживания и анализа тренировок",
+    tags: ["React Native", "Nuxt.js"],
     metrics: { label: "Время сделки", value: "-45%" },
     gradient: "from-blue-500 via-blue-400 to-sky-300",
     image:
