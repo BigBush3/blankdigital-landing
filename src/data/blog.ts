@@ -372,7 +372,7 @@ Retrieval → Reranking → Generation → Validation — стандартный
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
     author: { name: "Иван Крутов", role: "PM, blankdigital" },
   },
-  {
+  
     {
   slug: "openclaw-ai-agents-architecture",
   title: "OpenClaw: архитектура автономных AI-агентов для бизнеса",
