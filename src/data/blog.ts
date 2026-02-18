@@ -15,8 +15,8 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "ai-agents-business-automation-2025",
-    title: "AI-агенты: как автоматизировать бизнес-процессы в 2025 году",
+    slug: "ai-agents-business-automation-2026",
+    title: "AI-агенты: как автоматизировать бизнес-процессы в 2026 году",
     excerpt:
       "Разбираемся, как автономные AI-агенты меняют подход к автоматизации и какие задачи они уже решают лучше людей.",
     content: `
