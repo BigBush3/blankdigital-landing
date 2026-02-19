@@ -45,9 +45,9 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 text-center">
         {/* Badge */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-blue mb-8"
         >
           <span className="relative flex h-2 w-2">
@@ -61,9 +61,9 @@ export default function Hero() {
 
         {/* Headline */}
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.15 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
           className="text-5xl sm:text-6xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-8"
         >
           <span className="text-slate-900">Создаём </span>
@@ -75,19 +75,20 @@ export default function Hero() {
 
         {/* Subtitle */}
         <motion.p
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
           className="text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto mb-12 leading-relaxed"
         >
-         Разрабатываем платформы и мобильные приложения, интегрируя AI в ключевые процессы.
+          Разрабатываем платформы и мобильные приложения, интегрируя AI в
+          ключевые процессы.
         </motion.p>
 
         {/* CTA Buttons */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.45 }}
+          transition={{ duration: 0.5, delay: 0.25 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
@@ -109,7 +110,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
+          transition={{ delay: 0.8 }}
           className="mt-20"
         >
           <motion.div

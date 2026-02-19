@@ -34,14 +34,14 @@ function AnimatedCounter({
 
 const stats = [
   { value: 150, suffix: "+", label: "Проектов реализовано" },
-  { value: 98, suffix: "%", label: "Клиентов довольны" },
+  { value: 100, suffix: "%", label: "Клиентов довольны" },
   { value: 40, suffix: "+", label: "AI-интеграций" },
   { value: 5, suffix: " лет", label: "На рынке" },
 ];
 
 export default function Stats() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <section id="stats" className="relative py-32 overflow-hidden" ref={ref}>
@@ -55,9 +55,9 @@ export default function Stats() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
@@ -75,9 +75,9 @@ export default function Stats() {
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.1 * i }}
+              transition={{ duration: 0.35, delay: 0.06 * i }}
               className="text-center"
             >
               <div className="relative inline-block">
@@ -93,9 +93,9 @@ export default function Stats() {
 
         {/* Testimonial quote */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.6 }}
+          transition={{ duration: 0.4, delay: 0.25 }}
           className="mt-20 max-w-3xl mx-auto text-center"
         >
           <div className="relative p-10 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm">

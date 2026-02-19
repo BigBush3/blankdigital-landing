@@ -37,14 +37,10 @@ const steps = [
 
 export default function Process() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
-    <section
-      id="process"
-      className="relative py-32 overflow-hidden"
-      ref={ref}
-    >
+    <section id="process" className="relative py-32 overflow-hidden" ref={ref}>
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-slate-50 to-white" />
       <div className="absolute inset-0 bg-grid" />
@@ -52,9 +48,9 @@ export default function Process() {
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Section header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           className="text-center mb-20"
         >
           <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold text-blue-600 bg-blue-50 border border-blue-100 mb-6">
@@ -65,8 +61,8 @@ export default function Process() {
             <span className="text-gradient"> масштабируемого продукта</span>
           </h2>
           <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-            Выстроенный и прозрачный процесс разработки 
-            с чёткими метриками и контролем на каждом этапе.
+            Выстроенный и прозрачный процесс разработки с чёткими метриками и
+            контролем на каждом этапе.
           </p>
         </motion.div>
 
@@ -75,9 +71,9 @@ export default function Process() {
           {steps.map((step, i) => (
             <motion.div
               key={step.number}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.15 * i }}
+              transition={{ duration: 0.35, delay: 0.08 * i }}
               className="relative group"
             >
               {/* Connector line */}
@@ -87,7 +83,7 @@ export default function Process() {
                   <motion.div
                     initial={{ scaleX: 0 }}
                     animate={isInView ? { scaleX: 1 } : {}}
-                    transition={{ duration: 0.8, delay: 0.3 * i + 0.5 }}
+                    transition={{ duration: 0.6, delay: 0.15 * i + 0.3 }}
                     className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 to-blue-300 origin-left"
                   />
                 </div>

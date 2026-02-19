@@ -2,14 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import {
-  Globe,
-  Smartphone,
-  Network,
-  Brain,
-  Code2,
-  BarChart3,
-} from "lucide-react";
+import { Globe, Smartphone, Network, Brain, BarChart3 } from "lucide-react";
 
 const services = [
   {
@@ -44,7 +37,7 @@ const services = [
     features: ["LLM интеграция", "Computer Vision", "NLP"],
     gradient: "from-blue-500 to-violet-400",
   },
-  
+
   {
     icon: BarChart3,
     title: "Аналитика и данные",
@@ -57,7 +50,7 @@ const services = [
 
 export default function Services() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <section id="services" className="relative py-32 bg-white" ref={ref}>
@@ -66,9 +59,9 @@ export default function Services() {
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Section header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           className="text-center mb-20"
         >
           <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold text-blue-600 bg-blue-50 border border-blue-100 mb-6">
@@ -89,9 +82,9 @@ export default function Services() {
           {services.map((service, i) => (
             <motion.div
               key={service.title}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.1 * i }}
+              transition={{ duration: 0.35, delay: Math.min(0.06 * i, 0.3) }}
               className="group relative"
             >
               <div className="relative h-full p-8 rounded-3xl bg-white border border-slate-100 hover:border-blue-200 shadow-sm hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500">
